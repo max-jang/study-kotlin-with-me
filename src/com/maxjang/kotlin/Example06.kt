@@ -25,6 +25,11 @@ class Person(var name: String, val birthYear: Int) {
     }
 }
 
+// 클래스 생성자에 초기값을 이런식으로 지정도 가능
+class Person2(var name: String = "이름없음", var age: Int) {
+
+}
+
 
 
 
