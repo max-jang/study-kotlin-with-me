@@ -26,4 +26,16 @@ fun main() {
     for (i in 'a'..'z') {
         print(i)
     }
+
+    println()
+
+    // label: 표현식 앞에 label을 달아 jump 가능
+    loop@ for (i in 1..10) {
+        for (j in 1..10) {
+            if (i == 1 && j == 2) break@loop
+            println("i: $i, j: $j")
+        }
+    }
+
 }
+
