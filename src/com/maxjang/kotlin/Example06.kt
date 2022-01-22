@@ -20,7 +20,7 @@ class Person(var name: String, val birthYear: Int) {
     // constructor: 인스턴트 생성시 추가적인 구문을 수행하는 보조생성자
     // 반드시 기본생성자를 통해 속성을 초기화를 해야함
     // 기본 생성자 생성 후 보조생성자가 생성됨
-    constructor(name: String): this(name, 1991) {
+    constructor(name: String) : this(name, 1991) {
         println("보조생성자가 사용되었습니다.")
     }
 }
